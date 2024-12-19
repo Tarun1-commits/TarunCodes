@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Showcase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpaperaccess.com/full/3847366.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+             
+              justify-content: center;
+               align-items: center;
+        }
+        header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+           
+            justify-content: center; 
+            align-items: center;
+            display: flex;
+            padding: 1em 1.5em;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px; 
+        }
+        .header-title {
+            font-size: 1.8em;
+            margin: 0 auto; 
+            font-size: 2.5em;
+            color: #ffffff;
+            margin: 0;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgb(250, 0, 0);
+        }
+        .important-links {
+            display: flex;
+            gap: 0.5em;
+        }
+        .important-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.85em;
+            padding: 0.4em 0.8em;
+            background-color: #4CAF50;
+            border-radius: 4px;
+           
+        }
+       
+        
+        .book-container {
+            display: grid;
+            background-image: url('https://wallpaperaccess.com/full/3847366.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            padding: 2em;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 4.5em;
+            margin: 0 auto;
+            border-radius: 8px;
+            flex: 1;
+            box-sizing: border-box;
+           
+             display: grid;
+              grid-template-columns: repeat(3, 1fr);
+        }
+        .book-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgb(0, 55, 7);
+            overflow: hidden;
+             position: relative;
+        }
+        .book-item img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1em;
+            
+              display: block;
+               transition: transform 0.3s ease;
+        }
+        .book-item:hover img {
+             transform: scale(1.2);
+             box-shadow: 0 0 30px yellow;
+             
+        }
+        .book-item h3 {
+            margin: 0;
+            font: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: oblique;
+            font-size: 1.1em;
+            color: #333;
+            text-align: center;
+        }
+        .description {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #f6f1f1;
+            font-size: 1.2em;
+            padding: 1em;
+            background-color: rgb(0, 0, 0);
+            border: 0px solid #080808;
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="header-title">LITERATURE LOUNGE</h1>
+            <div class="important-links">
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Login</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="reviewpage.html">Other Books Review</a>
+                <a href="welcome.html">Exit</a>
+            </div>
+        </div>
+    </header>
+    <div class="book-container">
+        <a href="signup.html">
+        <div class="book-item">
+            <img src="https://th.bing.com/th/id/R.df923438dae291a7444ff9117d9b370f?rik=%2fq8vt1eg5vLUEw&riu=http%3a%2f%2fwww.scrolldroll.com%2fwp-content%2fuploads%2f2021%2f01%2fthe-secret-diary-of-kasturba-books-by-indian-authors.jpg&ehk=HdC6N67T3H0JCDctYXWdnmuNDI4Cj4eveVzFnFSDXoI%3d&risl=&pid=ImgRaw&r=0" alt="Book Title 1">
+            <h3>KASTURBA GANDHI</h3>
+        </div>
+    </a>
+    <a href="signup.html">
+        <div class="book-item">
+            <img src="https://d5i0fhmkm8zzl.cloudfront.net/9780545790352_2.jpg" alt="Book Title 2">
+            <h3>J.K ROWLING</h3>
+        </div>
+    </a>
+    <a href="signup.html">
+        <div class="book-item">
+            <img src="https://th.bing.com/th/id/R.5630c91a179c5b5bad484821905fdc91?rik=BBN5gOUkAwaHJw&riu=http%3a%2f%2fimg1.wikia.nocookie.net%2f__cb20110708205448%2fdisney%2fimages%2f4%2f49%2fThe_jungle_book_poster.jpg&ehk=flCp4eSOzF7OzCz488Q3EALUHNr2TNoBpcWxXv1FORY%3d&risl=&pid=ImgRaw&r=0" alt="Book Title 3">
+            <h3>RUDYARD KIPLING</h3>
+        </div>
+    </a>
+    <a href="signup.html">
+        <div class="book-item">
+            <img src="https://i.pinimg.com/736x/e7/25/cf/e725cfabb9a83518132276275ef6df0f--reading-lists-book-series.jpg" alt="Book Title 4">
+            <h3>R.L STIEN</h3>
+        </div>
+    </a>
+        <a href="signup.html">
+        <div class="book-item">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630508191i/58905550.jpg" alt="Book Title 5">
+            <h3>MAHATAMA GANDHI</h3>
+        </div>
+        </a>
+        <a href="signup.html">
+        <div class="book-item">
+            <img src="https://th.bing.com/th/id/R.4e64980e3a2aa529419c23903438af87?rik=AAULty1jgKjqrg&riu=http%3a%2f%2fi.gr-assets.com%2fimages%2fS%2fcompressed.photo.goodreads.com%2fhostedimages%2f1471028081i%2f19993880._SY540_.jpg&ehk=V3HXtWNpgVlzukrPWcelFKIquS4SP9kd1sXrEDFKGJc%3d&risl=&pid=ImgRaw&r=0" alt="Book Title 6">
+            <h3>HENRY FIELDING</h3>
+        </div>
+        </a>
+        <a href="signup.html">
+        <div class="book-item">
+            <img src="https://th.bing.com/th/id/OIP.-i4ZQsnlB1ateYEKxVhKnAHaL6?rs=1&pid=ImgDetMain" alt="Book Title 7">
+            <h3>CHARLES DICKENS</h3>
+        </div>
+        </a>
+        <a href="signup.html">
+        <div class="book-item">
+            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780794443702/disney-alice-in-wonderland-9780794443702_hr.jpg" alt="Book Title 8">
+            <h3>LEWIS CARROLL</h3>
+        </div>
+        </a>
+        <a href="signup.html">
+        <div class="book-item">
+            <img src="https://images.sr.roku.com/idType/roku/context/trc/id/10bc8e647b77591aa08bece35fae3dc5/images/gracenote/assets/p85953_v_v8_ab.jpg" alt="Book Title 9">
+            <h3>WILLIAM SHAKESPEARE</h3>
+        </div>
+        </a>
+        <a href="signup.html">
+            
+        <div class="book-item">
+            <img src="https://th.bing.com/th/id/OIP.IIRyKlxGlGC9AHaLp7dgRgHaL4?rs=1&pid=ImgDetMain" alt="Book Title 10">
+            <h3>THOMAS HARDY</h3>
+        </div>
+        </a>
+        <a href="signup.html">
+            
+        <div class="book-item">
+            <img src="https://th.bing.com/th/id/OIP.VTBq8_0SsKhX6IP3AD8DgwHaJ4?rs=1&pid=ImgDetMain" alt="Book Title 11">
+            <h3>RABINDRANATH TAGORE</h3>
+        </div>
+        </a>
+        <a href="signup.html">
+            
+        <div class="book-item">
+            <img src="https://th.bing.com/th/id/OIP.BAJDUV1oQKf77G8YdrAXjgAAAA?rs=1&pid=ImgDetMain" alt="Book Title 12">
+            <h3>JHUMPA LAHIRI</h3>
+        </div>
+        </a>
+    </div>
+    <div class="description">
+       <b> Welcome to our Literature Lounge! Here, you can explore a variety of books covering different genres and authors. Dive into the world of literature and discover your next great read by reading different customer reviews about a particular book.
+    </b></div>
+</body>
+</html>

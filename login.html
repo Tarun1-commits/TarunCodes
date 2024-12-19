@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #7f7b7b;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIG1._4fUNDfpV4omxjWXjv7M&pid=ImgGn'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            background-image: url('');
+            background-size: contain; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            padding: 2em;
+            border-radius: 8px;
+            border-color: #45a049;
+            box-shadow: 0 4px 8px rgba(6, 246, 2, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #111;
+            margin-bottom: 1em;
+        }
+        h2 {
+            margin-bottom: 1.5em;
+            color: #333;
+        }
+        label {
+            margin: 0.5em 0 0.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.7em;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>LITERATURE LOUNGE</h1>
+        <h2>Login</h2>
+        <form id="login-form">
+            <b><label for="username">Username</label></b>
+            <input type="text" id="username" name="username" required>
+
+            <b><label for="password">Password</label></b>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'reviewpage.html'; 
+        });
+    </script>
+</body>
+</html>
